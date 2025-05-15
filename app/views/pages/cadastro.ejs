@@ -72,28 +72,28 @@
                 <section id="fullnameInput">
                     <label for="fullname" class="titleLabel">Nome completo</label>
                     <br>
-                    <input id="fu" type="email" placeholder="Digite seu nome completo">
+                    <input id="fuAluno" type="email" placeholder="Digite seu nome completo">
                 </section>
 
                 <br>
 
                 <section class="sectMargin" id="emailRegisterInput">
-                    <label for="emailRegister" class="titleLabel">E-mail</label>
+                    <label for="emailRegisterAluno" class="titleLabel">E-mail</label>
                     <br>
-                    <input id="emailRegister" type="email" placeholder="Digite seu e-mail">
+                    <input id="emailRegisterAluno" type="email" placeholder="Digite seu e-mail">
                 </section>
 
                 <br>
                 <section class="sectMargin" id="passwordInput">
-                    <label for="passwordRegister" class="titleLabel">Senha</label>
-                    <input type="password" name="passwordRegister" id="passwordRegister" placeholder="Insira sua senha">
+                    <label for="passwordRegisterAluno" class="titleLabel">Senha</label>
+                    <input type="password" name="passwordRegisterAluno" id="passwordRegisterAluno" placeholder="Insira sua senha">
                 </section>
 
                 <br>
 
                 <section class="sectMargin" id="passwordConfirmInput">
-                    <label for="passwordRegisterConfirm" class="titleLabel">Confirmar senha</label>
-                    <input type="password" name="passwordRegisterConfirm" id="passwordRegisterConfirm"
+                    <label for="passwordRegisterConfirmAluno" class="titleLabel">Confirmar senha</label>
+                    <input type="password" name="passwordRegisterConfirmAluno" id="passwordRegisterConfirmAluno"
                         placeholder="Confirme sua senha">
                 </section>
 
@@ -127,18 +127,18 @@
                 <section class="sectMargin" id="complementoInput">
                     <input type="text" name="complemento" id="complemento" placeholder="Complemento"
                     value="<%= valores && valores.complemento ? valores.complemento : '' %>"
-                    class="<%= avisoErro && avisoErro.numero ? avisoErro.numero : '' %>">
+                    class="<%= avisoErro && avisoErro.complemento ? avisoErro.complemento : '' %>">
                 </section>
 
                 <section class="sectMargin" id="numberAndCpf">
                     <section>
-                        <label for="numberRegister" class="titleLabel">Telefone</label>
-                        <input type="text" name="numberRegister" id="numberRegister" placeholder="Ex: 11940028922"
+                        <label for="telefoneAluno" class="titleLabel">Telefone</label>
+                        <input type="text" name="telefoneAluno" id="telefoneAluno" placeholder="Ex: 11940028922"
                             maxlength="11">
                     </section>
                     <section>
-                        <label for="cpfRegister" class="titleLabel">CPF</label>
-                        <input type="text" name="cpfRegister" id="cpfRegister" placeholder="Digite seu CPF"
+                        <label for="cpfAluno" class="titleLabel">CPF</label>
+                        <input type="text" name="cpfAluno" id="cpfAluno" placeholder="Digite seu CPF"
                             maxlength="11">
                     </section>
 
@@ -192,7 +192,7 @@
                 </section>
 
                 <section id="buttonInput">
-                    <button type="button" id="confirmRegister">Confirmar Cadastro</button>
+                    <button type="button" id="confirmRegisterAluno">Confirmar Cadastro</button>
                 </section>
 
                 <section id="textLogin">
@@ -263,7 +263,7 @@
 
                 <section class="sectMargin" id="ruaInput">
                     <label for="ruaAcad" class="titleLabel">Rua</label>
-                    <input type="text" name="ruaAcad" id="ruaAcad" placeholder="Rua" value = '<%= valores.logradouro %>' readonly>
+                    <input type="text" name="ruaAcad" id="ruaAcad" placeholder="Rua" value = '<%= valores.logradouro %>'>
                 </section>
 
                 <br>
@@ -291,7 +291,7 @@
                     <section class="hourAcademy">
                         <section class="blockHour">
                             <p>Abertura</p>
-                            <input type="time" name="hourAcademyRegister" id="hourAcademyRegister"
+                            <input type="time" name="hourAcademyOpen" id="hourAcademyCloser"
                                 placeholder="Digite o horário de funcionamento">
                         </section>
                         <section class="blockHour">
@@ -328,7 +328,7 @@
                 </section>
 
                 <section id="buttonInput">
-                    <button type="button" id="confirmRegister">Confirmar Cadastro</button>
+                    <button type="button" id="confirmRegisterAcademia">Confirmar Cadastro</button>
                 </section>
 
                 <section id="textLogin">
@@ -345,15 +345,15 @@
                 <section class="sectMargin" id="fullnameInput">
                     <label for="fullname" class="titleLabel">Nome completo</label>
                     <br>
-                    <input id="fu" type="email" placeholder="Digite seu nome completo">
+                    <input id="fuProf" type="email" placeholder="Digite seu nome completo">
                 </section>
 
                 <br>
 
                 <section class="sectMargin" id="emailRegisterInput">
-                    <label for="emailRegister" class="titleLabel">E-mail</label>
+                    <label for="emailRegisterProf" class="titleLabel">E-mail</label>
                     <br>
-                    <input id="emailRegister" type="email" placeholder="Digite seu e-mail">
+                    <input id="emailRegisterProf" type="email" placeholder="Digite seu e-mail">
                 </section>
 
                 <br>
@@ -376,15 +376,15 @@
 
                 <br>
                 <section class="sectMargin" id="passwordInput">
-                    <label for="passwordRegister" class="titleLabel">Senha</label>
-                    <input type="password" name="passwordRegister" id="passwordRegister" placeholder="Insira sua senha">
+                    <label for="passwordRegisterProf" class="titleLabel">Senha</label>
+                    <input type="password" name="passwordRegisterProf" id="passwordRegisterProf" placeholder="Insira sua senha">
                 </section>
 
                 <br>
 
                 <section class="sectMargin" id="passwordConfirmInput">
-                    <label for="passwordRegisterConfirm" class="titleLabel">Confirmar senha</label>
-                    <input type="password" name="passwordRegisterConfirm" id="passwordRegisterConfirm"
+                    <label for="passwordRegisterConfirmProf" class="titleLabel">Confirmar senha</label>
+                    <input type="password" name="passwordRegisterConfirmProf" id="passwordRegisterConfirmProf"
                         placeholder="Confirme sua senha">
                 </section>
 
@@ -404,7 +404,7 @@
                 </section>
 
                 <section id="buttonInput">
-                    <button type="button" id="confirmRegister">Confirmar Cadastro</button>
+                    <button type="button" id="confirmRegisterProf">Confirmar Cadastro</button>
                 </section>
 
                 <section id="textLogin">
