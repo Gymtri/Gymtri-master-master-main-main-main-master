@@ -8,7 +8,9 @@ const salt = bcrypt.genSaltSync(10)
 const usuarioController = {
 
     //validação
+
     validacaoFormularioCadastro : [
+        
         body("nome")
             .isLength({min:3, max:45})
             .withMessage("O nome deve ter de 3 a 45 letras"),
@@ -40,7 +42,7 @@ const usuarioController = {
     //métodos 
     inserirUsuario: async (req, res) => {
     const listaErros = validationResult(req);
-
+    console.log("Testes Banco")
     if (listaErros.isEmpty()) {
         // Verifica se o e-mail já existe
         const usuarioExistente = await usuarioModel.buscarPorEmail(req.body.email);

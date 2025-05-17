@@ -68,7 +68,7 @@
         <!--Cadastro Aluno-->
 
         <section class="sectMargin" id="registerAluno">
-            <form>
+            <form method="post" action="cadastro" id="cadastro">
                 <section id="fullnameInput">
                     <label for="fullname" class="titleLabel">Nome completo</label>
                     <br>
@@ -103,9 +103,10 @@
                     <input type="text" name="cep" id="cep" placeholder="CEP"
                     class="<%= avisoErro && avisoErro.cep ? avisoErro.cep : '' %>"
                     value="<%= valores && valores.cep ? valores.cep : '' %>"
-                    onblur="pesquisacep(this.value);" onkeyup="mascaraCEP(event)">
+                    >
                 </section>
 
+                <!--onblur="pesquisacep(this.value);" onkeyup="mascaraCEP(event)"-->
                 <br>
 
                 <section class="sectMargin" id="ruaInput">
@@ -192,7 +193,7 @@
                 </section>
 
                 <section id="buttonInput">
-                    <button type="button" id="confirmRegisterAluno">Confirmar Cadastro</button>
+                    <button type="button" onclick=" ShowAlert()" id="confirmRegisterAluno">Confirmar Cadastro</button>
                 </section>
 
                 <section id="textLogin">

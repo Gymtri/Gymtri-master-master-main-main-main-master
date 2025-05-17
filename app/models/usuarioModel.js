@@ -18,13 +18,16 @@ const usuarioModel = {
 
     // Verifica se o e-mail já está cadastrado
     buscarPorEmail: async (email) => {
+        console.log(email);
         try {
             const [rows] = await pool.query(
-                "SELECT * FROM usuario WHERE email_usuario = ? LIMIT 1",
+                "SELECT * FROM USUARIO WHERE email_usuario = ? LIMIT 1",
                 [email]
+                
             );
             return rows.length > 0 ? rows[0] : null;
         } catch (erro) {
+            console.log("Erro Try Catch");
             console.log(erro);
             return null;
         }

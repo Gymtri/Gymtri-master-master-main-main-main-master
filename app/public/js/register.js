@@ -11,3 +11,20 @@ function showForm(tipo) {
         document.getElementById('registerProfissional').style.display = 'block'
     }
 }
+
+function ShowAlert(){
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "cadastro", true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.send();
+};
+
+
+function mascaraCEP(){
+
+}
+
+function pesquisacep(){
+
+}

@@ -19,7 +19,7 @@ app.set("views", "./app/views");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-const usuarioRouter = require("./app/routes/usuarioRouter");
+const usuarioRouter = require("./app/routes/Routers");
 app.use("/", usuarioRouter);
 
 // const adminRouter = require('./app/routes/adminRouter');
